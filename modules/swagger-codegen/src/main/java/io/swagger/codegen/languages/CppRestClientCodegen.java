@@ -136,6 +136,7 @@ public class CppRestClientCodegen extends AbstractCppCodegen {
                 Arrays.asList("int", "char", "bool", "long", "float", "double", "int32_t", "int64_t"));
 
         typeMapping = new HashMap<String, String>();
+        typeMapping.put("ByteArray", "utility::string_t");
         typeMapping.put("date", "utility::datetime");
         typeMapping.put("DateTime", "utility::datetime");
         typeMapping.put("string", "utility::string_t");
